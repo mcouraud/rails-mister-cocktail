@@ -4,4 +4,11 @@
   <% end %>
 </ul>
 
+<%= cl_image_tag("san_francisco.jpg",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("boris_retreat_2017.jpg",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
+
 <%= link_to 'New Cocktail', new_cocktail_path, class: "btn btn-primary" %>
